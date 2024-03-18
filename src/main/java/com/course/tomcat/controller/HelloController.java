@@ -3,6 +3,7 @@ package com.course.tomcat.controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.concurrent.ThreadLocalRandom;
 
 @RestController
 @RequestMapping("/api")
@@ -17,5 +18,4 @@ public class HelloController {
     int random(){
         return ThreadLocalRandom.current().nextInt(0,1000);
     }
-
 }
